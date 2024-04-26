@@ -53,7 +53,7 @@ builder.Services.AddAuthentication
 
 // Add services to the container.
 string connectionString =
-    builder.Configuration.GetConnectionString("SQLDoctores");
+    builder.Configuration.GetConnectionString("SqlCubos");
 
 builder.Services.AddTransient<CubosRepository>();
 builder.Services.AddDbContext<CubosContext>
